@@ -1,0 +1,741 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --colorHeavy: #333333;
+    --colorMedium: #9FA3A7;
+    --colorLight: #A2A3A7;
+}
+
+.container {  
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "topleft topleft topright topright"
+      "topleft topleft topright topright"
+      "mid1 center1 center1 midright"
+      "mid1 center1 center1 midright"
+      "mid2 center2 center2 midright"
+      "mid2 center2 center2 midright"
+      "bottomleft bottomcenter bottomright bottomright";
+  }
+  
+  .topleft {
+    grid-area: topleft;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 4%;
+
+}
+
+.topLeftContent{
+    width: 32%;
+}
+
+.topLeftContent p:nth-child(1){
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--colorMedium);
+    letter-spacing: 2px;
+}
+
+.topLeftContent h2{
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--colorHeavy);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+}
+
+.topLeftContent p:nth-child(3){
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--colorLight);
+    line-height: 1.8;
+}
+
+.topleft img{
+    width: 40%;
+    justify-self: flex-end;
+    margin-top: 40px;
+
+}
+  
+  .topright {
+    grid-area: topright; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f8f9;
+}
+
+.topright p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--colorMedium);
+    letter-spacing: 2px;
+}
+
+.topright h1{
+    font-family: 'Arvo', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    color: var(--colorHeavy);
+    line-height: 1.2;
+    padding: 20px 100px;
+}
+
+.topright a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: #27C7DB;
+    align-self: center;
+}
+  
+.mid1 {
+    grid-area: mid1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #F05638;
+    padding: 0px 10px 50px 10px;
+    text-align: center;
+}
+
+
+.keyboard-content h2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 30px;
+    letter-spacing: 0px;
+    line-height: 1.4;
+}
+
+.keyboard-content a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #FDC80A;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+
+.keyboard-content a span {
+    margin-left: 5px;
+}
+
+.keyboard-image {
+    width: 100%;
+    padding-bottom: 20px;
+    margin-top: 50px;
+}
+  
+.mid2 {
+    grid-area: mid2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    background-color: #F7F8F9;
+}
+
+.games-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.gamepad-icon {
+
+    width: 90%;
+    margin-bottom: 20px;
+    position: relative;
+    left: -7%;
+}
+
+.games-content h2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--colorHeavy);
+    padding: 20px 0px 40px 0px;
+    width: 50%;
+}
+
+.games-content a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #27C7DB;
+    text-decoration: none;
+    letter-spacing: 2px;
+    align-self: center;
+}
+
+.games-content a:hover {
+    text-decoration: underline;
+}
+
+.games-content a span {
+    margin-left: 5px;
+}
+  
+.midright {
+    grid-area: midright;
+    padding: 40px 0px;
+    background-color: #8F76BC;
+    overflow: hidden;
+}
+
+.icloud-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #8166B0;
+    border-radius: 50%;
+    width: 373px;
+    height: 373px;
+    padding: 30px 0px;
+}
+
+.flagMid{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 3px 5px;
+    background-color: hsla(0, 0%, 100%, .08);
+    border-radius: 60px;
+}
+
+.flagMid img{
+    width: 13%;
+    align-self: flex-start;
+}
+
+.popular {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+}
+
+.top-image {
+    margin-bottom: 20px;
+    width: 65%;
+    margin: 20px 0px 5px;
+
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 32px;
+    font-weight: 700;
+    color: white;
+    margin: 20px 0px;
+}
+
+.description {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.8;
+    margin-bottom: 25px;
+    width: 70%;
+    text-align: center;
+}
+
+.icloud-content a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    letter-spacing: 3px;
+    text-decoration: none;
+    padding: 20px 25px;
+    background-color: #FFC80A;
+    border-radius: 25px;
+}
+  
+  
+.center1 {
+    grid-area: center1;
+    display: flex;
+    background-color: #fff;
+    padding: 70px 4% 0px;
+}
+
+.center1-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 50%;
+    margin: auto;
+    max-width: 180px;
+    margin: 0px 50px;
+}
+
+.center1-left p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--colorMedium);
+    letter-spacing: 2px;
+}
+
+.center1-left h2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--colorHeavy);
+    line-height: 1.4;
+    margin-top: 10px;
+    letter-spacing: 0px;
+}
+
+.center1-left img {
+    position: relative;
+    left: -160%;
+    width: 250%;
+    max-width: none;
+    margin-top: 20px;
+}
+
+.center1-right {
+    width: 50%;
+    padding: 0px 40px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.center1-right p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--colorLight);
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.center1-right a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    color: #27C7DB;
+    text-decoration: none;
+    align-self: flex-start;
+    letter-spacing: 2px;
+}
+
+
+.center1-right a span {
+    margin-left: 5px;
+}
+
+.center2 {
+    grid-area: center2;
+    background-color: #93b6b7;
+    background-image: url('../images/ux.png');
+    background-position: 50% 100%;
+    background-size: 80%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.best-choice-content {
+    width: 100%;
+    padding: 20px 30px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    background-color: #FA684F;
+    padding: 5px 7px;
+    border-radius: 5px;
+    width: fit-content;
+    text-align: center;
+    align-self: flex-start;
+}
+
+.center2 h2 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: white;
+    line-height: 1.4;
+    margin: 30px 0px;
+    letter-spacing: 0px;
+}
+
+.main-image {
+    position: relative;
+    left: -13%;
+    width: 100%;
+    bottom: 0;
+    justify-self: flex-end;
+}
+  
+.bottomleft {
+    grid-area: bottomleft;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #38D5F4;
+}
+
+.twitter-connect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.twitter-icon {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.twitter-connect h3 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.3;
+}
+  
+.bottomcenter {
+    grid-area: bottomcenter;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    text-align: center;
+}
+.popular-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+.popular-content p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 8px;
+    font-weight: 700;
+    color: white;
+    letter-spacing: 2px;
+    padding: 5px;
+    background-color: #7BC424;
+    border-radius: 5px;
+    width: fit-content;
+    justify-self: center;
+}
+
+.popular-content h3 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: var(--colorHeavy);
+    line-height: 1.3;
+    width: 70%;
+}
+  
+.bottomright {
+    grid-area: bottomright;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2C2C2C;
+}
+
+.vision-content {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    margin: 0px 20px;
+}
+
+.vision-image {
+    position: relative;
+    width: 45%;
+    left: -10%;
+}
+
+.vision-content h3 {
+    font-family: 'Arvo', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    color: white;
+    line-height: 1.4;
+    padding-right: 40px;
+}
+  
+
+
+
+
+
+@media screen and (max-width:992px){
+
+    .container {  display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+          "topright topright"
+          "topright topright"
+          "topleft topleft"
+          "topleft topleft"
+          "mid1 mid2"
+          "mid1 mid2"
+          "center1 center1"
+          "center1 center1"
+          "bottomleft midright"
+          "bottomleft midright"
+          "center2 midright"
+          "center2 midright"
+          "bottomcenter bottomcenter"
+          "bottomright bottomright"
+          "bottomright bottomright";
+      }
+      
+      .topright {
+        grid-area: topright;
+        justify-content: flex-start;
+        padding: 50px 0px;
+    }
+      .topright h1{
+        font-size: 35px;
+        padding: 20px 5px;
+        line-height: 1.5;
+    }
+      
+      .topleft {
+        grid-area: topleft;
+        padding: 50px 10px 0px;
+    }
+
+    .topLeftContent h2{
+
+        line-height: 1.4;
+    }
+
+    .topleft img{
+        width: 55%;
+        justify-self: flex-end;
+        margin-top: 0px;
+        align-self: flex-end;
+    }
+      
+      .mid1 { grid-area: mid1; }
+      
+      .mid2 { grid-area: mid2;
+        padding: 30px 5px;
+    }
+      .gamepad-icon {
+
+        width: 100%;
+        
+    }
+
+    .games-content h2 {
+        padding: 5px 0px 40px 0px;
+    }
+      
+      .center1 {
+        grid-area: center1;
+        padding: 50px 0px 0px;
+        
+    }
+
+    .center1-left p {
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+
+    .center1-left h2 {
+        margin-top: 0px;
+        
+    }
+    
+    .center1-right {
+        padding: 20px 40px 20px 0px;
+    }
+    .center1-right p {
+    margin-bottom: 25px;
+    width: 100%;
+}
+
+      
+      .bottomleft { grid-area: bottomleft; }
+      
+      .center2 {
+        grid-area: center2;
+        
+    }
+
+    .best-choice-content {
+
+        padding: 0px 10px 0px;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    .badge {
+        margin: 15px 0px 0px 25px;
+
+    }
+
+    .center2 h2 {
+
+        margin: 0px 0px;
+
+    }
+      
+      .midright { grid-area: midright; }
+      
+      .bottomcenter { grid-area: bottomcenter; }
+      .popular-content{
+        margin: 35px 0px;
+      }
+      .popular-content h3 {
+        width: 100%;
+    }
+      
+      .bottomright { grid-area: bottomright; 
+        padding: 40px 0px;
+    }
+      .vision-image {
+        position: relative;
+        width: 60%;
+        left: -15%;
+        top: -10%;
+    }
+    .vision-content {
+
+        overflow: visible;
+
+    }
+
+    .vision-content h3 {
+        padding-right: 0px;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@font-face {
+    font-family: 'Arvo';
+    src: url('../webfonts/Arvo/Arvo-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Arvo';
+    src: url('../webfonts/Arvo/Arvo-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Arvo';
+    src: url('../webfonts/Arvo/Arvo-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+  }
+  
+  @font-face {
+    font-family: 'Arvo';
+    src: url('../webfonts/Arvo/Arvo-BoldItalic.ttf') format('truetype');
+    font-weight: bold;
+    font-style: italic;
+  }
+
+
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat/Montserrat-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Montserrat';
+    src: url('../webfonts/Montserrat/Montserrat-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: italic;
+  }
